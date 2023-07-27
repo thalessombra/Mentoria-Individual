@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Montserrat", sans-serif;
+    
+}
+:root {
+--var-primary-color: #00AA17;
+     --var-secondary-color: #00720F;
+     font-family:  "Montserrat", sans-serif;
+}
+
+a{
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    
+   text-decoration: underline;
+}
+.logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+body {
+    background-color: black;
+    padding: 0 1rem;
+}
+nav {
+   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #23232e;
+    height: 12vh;
+    color: #FFF;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    color: #FFF;
+}
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+    color: #FFF;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #FFF;
+    margin: 8px;
+}
+@media (max-width:999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        color: #FFF;
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 88vh;
+        background: #23232e;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+       opacity: 1;
+     
+    }
+    .mobile-menu {
+        display: block;
+    }
+}
+.nav-list.active {
+    transform: translateX(0);
+    
+    transition: transform 0.3s ease-in;
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.mobile-menu.active .line1 {
+transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.button{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    max-width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(90deg, #00AA17 0%, #00720F 100%);
+    border-radius: 0px 0px 0px 0px;
+    padding: 16px 20px 16px 20px;
+    display: block;
+    
+  }
+  i{
+    color: #EA7B6C;
+    
+  }
+  h2{
+    color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    
+  }
+   p{
+    color: #FFFFFF;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 1.4em;
+   }
+  span{
+    background-color: #E46E25;
+    color: black;
+  }
+  strong {
+    color: white;
+  }
+  ul li { color: white;
+
+  }
+
+  footer {
+    border-bottom: 0;
+    color: black;
+    padding: 1rem 1.25rem 4rem;
+    background-color: #FFF;
+}
+footer span a {
+    display: block;
+    padding-left: 0;
+}
+
+span a i {
+    color: black;
+    
+}
+
+i.fa-instagram:hover{
+   
+    
+    background-color: rgb(215, 47, 128);
+    align-items: center;
+}
+i.fa-whatsapp:hover{
+   
+    
+    background-color:rgb(8, 223, 30);
+    align-items: center;
+}
+i.fa-twitter:hover{
+   
+    
+    background-color:#0CF9FF;
+    align-items: center;
+}
+i.fa-youtube:hover{
+   
+    
+    background-color:red;
+    align-items: center;
+}
+p {
+    text-align: center;
+}
+
+.hero-section,.courses-section {
+    border-color: #00008b98;
+    border-style: solid;
+    border-width: 0 0 1px 1px;
+    padding: 1rem;
+}
+.hero-section {
+    padding-right: 0;
+    padding-bottom: 6rem;
+}
+.p {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem auto;
+}
+.hero-section-2{
+    padding-right: 0;
+    padding-bottom: 6rem;
+    gap: 1.25rem;
+    color: #FFF;
+}
+.hero-section-2 img {
+    display: block;
+    margin: 1.25rem 0 0 auto;
+    max-width: 100%;
+}
+.hero-section img {
+    display: block;
+    margin: 1.25rem 0 0 auto;
+    max-width: 100%;
+
+}
+.hero-section-2 p {
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+}
+.hero-section-2 .button {
+    position: relative;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    padding-right: 1.25rem;
+}
+.hero-section .button {
+    position: relative;
+}
+.courses-section {
+    padding-bottom: 8rem;
+}
+.info {
+    background-image: linear-gradient(180deg, #0000FF 0%, #0505b8 100%);
+    width: 97vw;
+ padding: 30px 0px 30px 0px;
+    border-radius: 0 0 70px 70px;
+}
+.cards {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem auto;
+    gap: 1.25rem;
+   
+    font-family: "Monserrat",sans-serif;
+}
+.card {
+    background-color: transparent;
+    background-image: linear-gradient(270deg, #D1D1D121 0%, #1D1D1DB3 100%);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px 15px 20px 15px;
+    max-width: 25rem;
+    text-align: center;
+    
+}
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+span.span {
+    text-decoration: none;
+    color: black;
+    background-color: #FFF;
+}
+span i {
+    color: #0000FF;
+}
+.mt-1 {
+    margin-top: 1rem;
+}
+.mt-2 {
+    margin-top: 2rem;
+ }
+ .mb-1 {
+    margin-bottom: 1rem;
+ }
+ .mb-2 {
+    margin-bottom: 2rem;
+ }
+ .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .text {
+    color:#00AA17;
+ }
+ .text-center {
+    text-align: center;
+ }
+
+ @media screen and (min-width: 72rem) {
+    .container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+    .container.row-reverse {
+        flex-direction: row-reverse;
+    }
+    
+    .column {
+        flex: 2;
+    }
+
+    .about-column {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    }
+    .mapbox {
+        flex: 3;
+    }
+ }
