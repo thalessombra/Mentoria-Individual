@@ -305,7 +305,8 @@ span i {
     margin-right: auto;
  }
  .text {
-    color:#00AA17;
+    color:black;
+    text-align: center;
  }
  .text-center {
     text-align: center;
