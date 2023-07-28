@@ -74,18 +74,20 @@ body { background-color: black;
       display: flex;
       justify-content: center;
       align-items: center;
-      
+      margin: auto;
         
       }
   }
   /* Media Query para tornar a navbar responsiva */
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 750px) {
     .navbar {
       flex-direction:row;
       align-items: start;
       
     }
-    
+     .bot {
+      margin-left:120px;
+     }
     .navbar-toggle {
       display: block;
     }
@@ -212,14 +214,11 @@ p {
     gap: 1rem;
     color: #FFF;
 }
-
-
-.hero-section img {
-    display: block;
-    margin: 1.25rem 0;
-    width: 100%;
-
+.a {
+  width: 50vw;
 }
+
+
 .hero-section-2 p {
     font-size: 1.25rem;
     padding-right: 1.25rem;
