@@ -70,13 +70,12 @@ body { background-color: black;
   }
   
   @media screen and (min-width: 400px) {
-  
+    .bot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       
-      header img {
-        display: block;
-        margin: 1rem auto;
-      }
-      
+        
       }
   }
   /* Media Query para tornar a navbar responsiva */
@@ -215,12 +214,12 @@ p {
 }
 .hero-section-2 img {
     display: block;
-    margin: 1.25rem 0 0 auto;
+    margin: 1.25rem 0;
     max-width: 100%;
 }
 .hero-section img {
     display: block;
-    margin: 1.25rem 0 0 auto;
+    margin: 1.25rem 0;
     max-width: 100%;
 
 }
