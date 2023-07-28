@@ -96,7 +96,7 @@ body { background-color: black;
       float: none; /* Remover o float para que o conteúdo principal ocupe toda a largura */
     }
      .bot {
-      margin-left:120px;
+      margin-left:110px;
      }
      .bottom {
       position: relative;
