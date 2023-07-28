@@ -70,12 +70,13 @@ body { background-color: black;
   }
   
   @media screen and (min-width: 400px) {
-    .bot {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  
       
-        
+      header img {
+        display: block;
+        margin: 1rem auto;
+      }
+      
       }
   }
   /* Media Query para tornar a navbar responsiva */
@@ -164,7 +165,6 @@ footer span  {
     background-color: white;
     margin: 0 7px;
 }
-
 
 
 i.fa-instagram:hover{
