@@ -25,8 +25,8 @@ body { background-color: black;
     font-family:  "Montserrat", sans-serif;
   }
   header {
-    background-image: linear-gradient(90deg, #0d22c6 0%, #00008b98 100%);
-    color: #fff;
+    background-color: #e04c16;
+    color: #000;
     padding: 10px;
     font-family:  "Montserrat", sans-serif
     
@@ -36,7 +36,7 @@ body { background-color: black;
     align-items: center;
     
   }
-  
+   
   .navbar-toggle {
     display: none;
     cursor: pointer;
@@ -72,18 +72,23 @@ body { background-color: black;
   /* Media Query para tornar a navbar responsiva */
   @media screen and (max-width: 768px) {
     .navbar {
-      flex-direction: column;
+      flex-direction:row;
+      align-items: start;
+      
     }
     
     .navbar-toggle {
       display: block;
     }
-  
+  .bot {
+    position: relative;
+    left: 65px;
+  }
     .navbar-links {
       display: none;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
-      background-image: linear-gradient(90deg, #0d22c6 0%, #00008b98 100%);
+      
       
     }
   
@@ -118,6 +123,7 @@ body { background-color: black;
     border-radius: 5px;
     padding: 16px 20px 16px 20px;
     display: block;
+    justify-content: center;
     
     
   }
@@ -187,11 +193,12 @@ p {
     border-color: #00008b98;
     border-style: solid;
     border-width: 0 0 1px 1px;
-    padding: 1rem;
+   
 }
 .hero-section {
     padding-right: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 0;
+  
 }
 
 .hero-section-2{
@@ -227,7 +234,7 @@ p {
     position: relative;
 }
 .courses-section {
-    padding-bottom: 8rem;
+    padding-bottom: 1rem;
 }
 .info {
     background-image: linear-gradient(180deg, #0000FF 0%, #0505b8 100%);
@@ -300,13 +307,29 @@ span i {
     .container {
         display: flex;
         align-items: center;
-        margin: 0 auto;
+        margin: 0 ;
         max-width: 72rem;
     }
     .container.row-reverse {
         flex-direction: row-reverse;
     }
-    
+    .btn {
+      position: absolute;
+      right: 42px;
+    }
+    header {
+      position: relative;
+      
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .bot {
+      float: left;
+  max-width: 40%; /* Ajuste a porcentagem conforme necessário */
+  margin-right: 1rem;
+    }
     .cards{
         width: calc(50% - 20px); /* Subtraímos a margem para garantir que dois cards caibam lado a lado */
       }
@@ -314,16 +337,20 @@ span i {
         font-family: "Montserrat", Sans-serif;
         font-size: 15px;
         font-weight: 700;
-        max-width: 14rem;
+        max-width: 21rem;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
         background-image: linear-gradient(90deg, #00AA17 0%, #00720F 100%);
         border-radius: 0px 0px 0px 0px;
-        padding: 16px 20px 16px 20px;
-        display: block;
-        justify-content: center;
+        padding: 12px 20px 12px 20px;
+        display: flex;
+       
         
+      }
+      .button:hover {
+        text-decoration: underline;
+        color: black;
       }
     .column {
         flex: 2;
