@@ -79,7 +79,7 @@ body { background-color: black;
       }
   }
   /* Media Query para tornar a navbar responsiva */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 770px) {
     .navbar {
       flex-direction:row;
       align-items: start;
@@ -201,26 +201,23 @@ p {
    
 }
 .hero-section {
-    padding-right: 0;
+    
     padding-bottom: 0;
   
 }
 
 .hero-section-2{
-    padding-right: 0;
+    
     padding-bottom: 6rem;
     gap: 1rem;
     color: #FFF;
 }
-.hero-section-2 img {
-    display: block;
-    margin: 1.25rem 0;
-    max-width: 100%;
-}
+
+
 .hero-section img {
     display: block;
     margin: 1.25rem 0;
-    max-width: 100%;
+    width: 100%;
 
 }
 .hero-section-2 p {
@@ -326,10 +323,7 @@ span i {
       position: relative;
       
     }
-    body {
-      margin: 0;
-      padding: 0;
-    }
+    
     .bot {
       float: left;
   max-width: 40%; /* Ajuste a porcentagem conforme necessário */
